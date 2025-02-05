@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <span class="scoreNum" id="scoreA">0</span> <span class="line">vs</span> <span class="scoreNum" id="scoreB">0</span>
+            <p id="status">게임 시작!</p>
+        </div>
+        <div>
+            <button id="getA">Get!</button>
+            <button id="getB">Get!</button>
+        </div>
+        <div>
+            <label for="target">몇 점까지?</label>
+            <select name="targetScore" id="target">
+                <option>1</option>
+                <option>3</option>
+                <option>5</option>
+                <option>11</option>
+            </select>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

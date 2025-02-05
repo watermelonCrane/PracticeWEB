@@ -1,0 +1,35 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.scoreNum {
+    font-size: 200px;
+}
+
+.line {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    border: 1.5px;
+    width: 90px;
+    height: 45px;
+    background-color: rgb(53, 209, 248);
+    border-style: solid;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    border-color: black;
+    font-size: 25px;
+    margin-inline: 30px;
+    margin-block: 20px;
+}
+
+select {
+    border-radius: 8px;
+}
