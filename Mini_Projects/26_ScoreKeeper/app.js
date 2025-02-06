@@ -32,14 +32,35 @@ const printWin = () => {
     const status = document.querySelector('#status');
     if (parseInt(scoreA.innerText) > parseInt(scoreB.innerText)) {
         status.innerText = '왼쪽이 이기는 중!';
+
+        scoreA.classList.add('winning');
+        scoreA.classList.remove('losing');
+
+        scoreB.classList.add('losing');
+        scoreB.classList.remove('winning');
+        
         if (isEnd) status.innerText = '왼쪽 승!'
     }
     else if (parseInt(scoreA.innerText) < parseInt(scoreB.innerText)) {
         status.innerText = '오른쪽이 이기는 중!';
+
+        scoreA.classList.add('losing');
+        scoreA.classList.remove('winning');
+
+        scoreB.classList.add('winning');
+        scoreB.classList.remove('losing');
+
         if (isEnd) status.innerText = '오른쪽 승!'
     }
     else {
         status.innerText = '동점!';
+
+        scoreA.classList.remove('losing');
+        scoreA.classList.remove('winning');
+
+        scoreB.classList.remove('winning');
+        scoreB.classList.remove('losing');
+
         if (isEnd) status.innerText = '비김!'
     }
 

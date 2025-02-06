@@ -33,3 +33,13 @@ button {
 select {
     border-radius: 8px;
 }
+
+.winning {
+    font-size: 250px;
+    color: darkblue;
+}
+
+.losing {
+    font-size: 180px;
+    color: deeppink;
+}
