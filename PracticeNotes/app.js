@@ -1,7 +1,16 @@
-const h1 = document.querySelector('h1');
-const input = document.querySelector('#username');
+const delayedColorChange = (color, delay) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay);
+    })
+}
 
-input.addEventListener('input', () => {
-    //h1.innerText = `Welcome, ${input.elements.value}`;
-    console.log('input!');
-})
+delayedColorChange('red', 1000)
+    .then(() => delayedColorChange('orange', 1000))
+    .then(() => delayedColorChange('yellow', 1000))
+    .then(() => delayedColorChange('green', 1000))
+    .then(() => delayedColorChange('blue', 1000))
+    .then(() => delayedColorChange('indigo', 1000));
+
